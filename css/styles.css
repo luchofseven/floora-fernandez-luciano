@@ -1,0 +1,110 @@
+:root {
+  --main-color-one: rgb(238, 153, 236);
+  --main-color-two: rgb(198, 255, 0);
+  --alpha-color-one: rgb(238, 153, 236, 0.3);
+  --alpha-color-two: rgb(198, 255, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+nav {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+nav div div ul li a {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+nav div div ul li a:hover {
+  color: var(--main-color-one) !important;
+  text-decoration: underline !important;
+}
+
+.bg-color-one {
+  background-color: var(--main-color-one);
+}
+
+.bg-color-two {
+  background-color: var(--main-color-two);
+}
+
+.bg-alpha-one {
+  background-color: var(--alpha-color-one);
+}
+
+.bg-alpha-two {
+  background-color: var(--alpha-color-two);
+}
+
+.bg-content {
+  background-color: #eeeeee;
+}
+
+.hero {
+  width: 100%;
+  height: 50vh;
+  background: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: var(--main-color-two);
+  font-size: 4rem;
+}
+
+.hero .row {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 50vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #products-cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--alpha-color-two);
+  }
+}
+
+@media (min-width: 992px) {
+  nav div div ul {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+  nav div div ul li {
+    padding-left: 2rem !important;
+  }
+
+  #products-carousel {
+    max-width: 100%;
+    height: 60vh;
+    overflow: hidden;
+  }
+
+  #products-carousel button {
+    display: none;
+  }
+
+  #products-cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--alpha-color-two);
+  }
+}
