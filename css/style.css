@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +68,42 @@ nav div div ul li a:hover {
   width: 100%;
 }
 
+#contact-section div div iframe {
+  min-width: 100%;
+  min-height: 350px;
+  margin-top: 1rem;
+}
+
+#h5-redes {
+  background-color: #c6ff00;
+  width: 100%;
+}
+
+.div-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.div-svg a {
+  text-decoration: none;
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.div-svg a svg {
+  width: 70px;
+  height: 70px;
+  color: #ee99ec;
+  transition: 0.2s ease-out;
+}
+
+.div-svg a svg:hover {
+  transform: scale(1.2);
+  color: #000000;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   #products-cards {
     display: grid;
@@ -81,6 +121,12 @@ nav div div ul li a:hover {
   }
   nav div div ul li {
     padding-left: 2rem !important;
+  }
+  nav div a {
+    transition: 0.2s ease-in;
+  }
+  nav div a:hover {
+    transform: scale(1.2);
   }
   #products-carousel {
     max-width: 100%;
