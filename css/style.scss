@@ -4,6 +4,7 @@
   display: none;
 }
 
+// General reset
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@
   font-size: 14px;
 }
 
+//Nav settings
 nav {
   border-bottom: 1px solid #d3d3d3;
   div {
@@ -33,6 +35,7 @@ nav {
   }
 }
 
+//Personalized classes
 .bg-color-one {
   background-color: $main-color-one;
 }
@@ -50,13 +53,14 @@ nav {
 }
 
 .bg-content {
-  background-color: #eeeeee;
+  background-color: $alpha-color-one;
 }
 
+//Hero settings
 .hero {
   width: 100%;
   height: 50vh;
-  background: url(../img/hero.jpg);
+  background: url(../img/carousel2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -65,15 +69,57 @@ nav {
   justify-content: center;
   h1 {
     color: $main-color-two;
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
   .row {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 50vh;
     width: 100%;
   }
 }
 
+//Index page
+.index-content {
+  a {
+    color: $main-color-one;
+    transition: 0.15s ease-in;
+    text-decoration: none;
+    &:hover {
+      color: $main-color-two;
+      text-decoration: underline;
+    }
+  }
+}
+
+//Nosotros page
+.nosotros-content {
+  h4 {
+    a {
+      text-decoration: underline;
+      color: #000000;
+      font-size: 1.4rem;
+      &:hover {
+        color: $main-color-one;
+      }
+    }
+  }
+}
+
+//Promociones page
+.promo-title {
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+//Productos page
+.nav-products {
+  display: none;
+}
+
+//Contacto page
 #contact-section {
   div {
     div {
@@ -118,7 +164,6 @@ nav {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    background-color: $alpha-color-two;
   }
 }
 
@@ -149,6 +194,33 @@ nav {
     }
   }
 
+  .nav-products {
+    display: block;
+    div {
+      div {
+        ul {
+          width: 100% !important;
+          display: flex !important;
+          justify-content: space-around !important;
+          li {
+            padding-left: 2rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-products {
+    div {
+      a {
+        transition: 0.2s ease-in;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
   #products-carousel {
     max-width: 100%;
     height: 60vh;
@@ -161,7 +233,6 @@ nav {
   #products-cards {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    background-color: $alpha-color-two;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

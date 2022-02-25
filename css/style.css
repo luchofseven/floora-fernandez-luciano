@@ -21,12 +21,12 @@ nav div div ul li a {
 }
 
 nav div div ul li a:hover {
-  color: #ee99ec !important;
+  color: #ff99ec !important;
   text-decoration: underline !important;
 }
 
 .bg-color-one {
-  background-color: #ee99ec;
+  background-color: #ff99ec;
 }
 
 .bg-color-two {
@@ -34,7 +34,7 @@ nav div div ul li a:hover {
 }
 
 .bg-alpha-one {
-  background-color: rgba(238, 153, 236, 0.3);
+  background-color: rgba(255, 153, 236, 0.3);
 }
 
 .bg-alpha-two {
@@ -42,13 +42,13 @@ nav div div ul li a:hover {
 }
 
 .bg-content {
-  background-color: #eeeeee;
+  background-color: rgba(255, 153, 236, 0.3);
 }
 
 .hero {
   width: 100%;
   height: 50vh;
-  background: url(../img/hero.jpg);
+  background: url(../img/carousel2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,13 +59,44 @@ nav div div ul li a:hover {
 
 .hero h1 {
   color: #c6ff00;
-  font-size: 4rem;
+  font-size: 5.5rem;
 }
 
 .hero .row {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 50vh;
   width: 100%;
+}
+
+.index-content a {
+  color: #ff99ec;
+  transition: 0.15s ease-in;
+  text-decoration: none;
+}
+
+.index-content a:hover {
+  color: #c6ff00;
+  text-decoration: underline;
+}
+
+.nosotros-content h4 a {
+  text-decoration: underline;
+  color: #000000;
+  font-size: 1.4rem;
+}
+
+.nosotros-content h4 a:hover {
+  color: #ff99ec;
+}
+
+.promo-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-products {
+  display: none;
 }
 
 #contact-section div div iframe {
@@ -95,7 +126,7 @@ nav div div ul li a:hover {
 .div-svg a svg {
   width: 70px;
   height: 70px;
-  color: #ee99ec;
+  color: #ff99ec;
   transition: 0.2s ease-out;
 }
 
@@ -109,7 +140,6 @@ nav div div ul li a:hover {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    background-color: rgba(198, 255, 0, 0.3);
   }
 }
 
@@ -128,6 +158,23 @@ nav div div ul li a:hover {
   nav div a:hover {
     transform: scale(1.2);
   }
+  .nav-products {
+    display: block;
+  }
+  .nav-products div div ul {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+  .nav-products div div ul li {
+    padding-left: 2rem !important;
+  }
+  .nav-products div a {
+    transition: 0.2s ease-in;
+  }
+  .nav-products div a:hover {
+    transform: scale(1.2);
+  }
   #products-carousel {
     max-width: 100%;
     height: 60vh;
@@ -139,7 +186,6 @@ nav div div ul li a:hover {
   #products-cards {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgba(198, 255, 0, 0.3);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
