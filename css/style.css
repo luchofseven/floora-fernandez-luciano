@@ -1,3 +1,25 @@
+.bg-main-color-one {
+  background-color: #ff99ec;
+}
+
+.bg-main-color-two {
+  background-color: #c6ff00;
+}
+
+.bg-alpha-color-one {
+  background-color: rgba(255, 153, 236, 0.3);
+}
+
+.bg-alpha-color-two {
+  background-color: rgba(198, 255, 0, 0.3);
+}
+
+.hero, .div-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -8,10 +30,6 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-}
-
-nav {
-  border-bottom: 1px solid #d3d3d3;
 }
 
 nav div div ul li a {
@@ -25,26 +43,6 @@ nav div div ul li a:hover {
   text-decoration: underline !important;
 }
 
-.bg-color-one {
-  background-color: #ff99ec;
-}
-
-.bg-color-two {
-  background-color: #c6ff00;
-}
-
-.bg-alpha-one {
-  background-color: rgba(255, 153, 236, 0.3);
-}
-
-.bg-alpha-two {
-  background-color: rgba(198, 255, 0, 0.3);
-}
-
-.bg-content {
-  background-color: rgba(255, 153, 236, 0.3);
-}
-
 .hero {
   width: 100%;
   height: 50vh;
@@ -52,9 +50,6 @@ nav div div ul li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero h1 {
@@ -111,9 +106,6 @@ nav div div ul li a:hover {
 }
 
 .div-svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
@@ -131,6 +123,8 @@ nav div div ul li a:hover {
 }
 
 .div-svg a svg:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
   color: #000000;
 }
@@ -156,6 +150,8 @@ nav div div ul li a:hover {
     transition: 0.2s ease-in;
   }
   nav div a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
   .nav-products {
@@ -173,6 +169,8 @@ nav div div ul li a:hover {
     transition: 0.2s ease-in;
   }
   .nav-products div a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
   #products-carousel {
