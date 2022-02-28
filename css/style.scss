@@ -162,6 +162,13 @@ nav {
   }
 }
 
+//Products Price Color
+#products-cards {
+  h3 {
+    color: #ff00eb;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   #products-cards {
     display: grid;
@@ -204,7 +211,7 @@ nav {
         ul {
           width: 100% !important;
           display: flex !important;
-          justify-content: space-around !important;
+          justify-content: space-evenly !important;
           li {
             padding-left: 2rem !important;
           }
@@ -237,5 +244,20 @@ nav {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 100%;
+        div {
+          img {
+            max-width: 250px;
+            max-height: 250px;
+          }
+        }
+      }
+    }
   }
 }

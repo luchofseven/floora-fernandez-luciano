@@ -129,6 +129,10 @@ nav div div ul li a:hover {
   color: #000000;
 }
 
+#products-cards h3 {
+  color: #ff00eb;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   #products-cards {
     display: grid;
@@ -160,7 +164,7 @@ nav div div ul li a:hover {
   .nav-products div div ul {
     width: 100% !important;
     display: flex !important;
-    justify-content: space-around !important;
+    justify-content: space-evenly !important;
   }
   .nav-products div div ul li {
     padding-left: 2rem !important;
@@ -185,5 +189,18 @@ nav div div ul li a:hover {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #products-cards div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #products-cards div div {
+    width: 100%;
+  }
+  #products-cards div div div img {
+    max-width: 250px;
+    max-height: 250px;
   }
 }
