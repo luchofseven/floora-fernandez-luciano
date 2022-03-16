@@ -29,10 +29,6 @@ $map: (
   align-items: center;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 // General reset
 * {
   margin: 0;
@@ -169,6 +165,12 @@ nav {
   }
 }
 
+#products-cards {
+  h4 {
+    max-width: 100%;
+    max-height: 40px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   #products-cards {
     display: grid;
